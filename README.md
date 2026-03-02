@@ -350,10 +350,10 @@ The following log-based metrics are generated:
 
 | Metric Name           | Description                      |
 | --------------------- | -------------------------------- |
-| `omb.m2131.el0.count` | Number of logs classified as EL0 |
-| `omb.m2131.el1.count` | Number of logs classified as EL1 |
-| `omb.m2131.el2.count` | Number of logs classified as EL2 |
-| `omb.m2131.el3.count` | Number of logs classified as EL3 |
+| `omb.m2131.el0` | Number of logs classified as EL0 |
+| `omb.m2131.el1` | Number of logs classified as EL1 |
+| `omb.m2131.el2` | Number of logs classified as EL2 |
+| `omb.m2131.el3` | Number of logs classified as EL3 |
 
 Each metric increments by 1 for every log where:
 
