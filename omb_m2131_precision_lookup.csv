@@ -1,4 +1,4 @@
-lookup_key,omb_category,derived_tier,max_tier_possible,domain,notes
+lookup_key,category,m2131_el,max_tier_possible,domain,notes
 1password|event_type|audit_event,privileged_access,el2,el2,identity,Admin/audit activity mapping (validate exact event type field in your tenant) :contentReference[oaicite:3]{index=3}
 1password|event_type|item_usage,authorization,el2,el2,identity,Credential/item usage supports deeper investigative context :contentReference[oaicite:2]{index=2}
 1password|event_type|sign_in_attempt,authentication,el1,el2,identity,Sign-in attempts (success/failure) are EL1 auth coverage :contentReference[oaicite:1]{index=1}
