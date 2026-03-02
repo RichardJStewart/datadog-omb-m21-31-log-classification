@@ -1,4 +1,4 @@
-source,omb_category,derived_tier,max_tier_possible,domain,notes
+source,category,m2131_el,max_tier_possible,domain,notes
 1password,authentication,el1,el2,identity,Default: treat as identity/security audit unless more specific event typing is available
 abnormal-security,security_telemetry,el2,el2,security,Default: email threat/security telemetry
 activemq,application_activity,el0,el1,application,Middleware operational logs; promote tier if authz/audit events are present
