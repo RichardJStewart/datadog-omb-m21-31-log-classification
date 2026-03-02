@@ -336,6 +336,80 @@ All classification logic changes should occur via:
 
 ---
 
+# 10. Custom Tier Metrics (EL0–EL3)
+
+In addition to enriching each log with an `omb` classification object, this implementation generates **four custom metrics**, one aligned to each OMB M-21-31 maturity tier.
+
+These metrics provide quantitative visibility into logging maturity and enable dashboarding, alerting, and executive reporting.
+
+---
+
+## Custom Metrics
+
+The following log-based metrics are generated:
+
+| Metric Name           | Description                      |
+| --------------------- | -------------------------------- |
+| `omb.m2131.el0.count` | Number of logs classified as EL0 |
+| `omb.m2131.el1.count` | Number of logs classified as EL1 |
+| `omb.m2131.el2.count` | Number of logs classified as EL2 |
+| `omb.m2131.el3.count` | Number of logs classified as EL3 |
+
+Each metric increments by 1 for every log where:
+
+```
+omb.m2131_el:<tier>
+```
+
+---
+
+## Purpose of Tier Metrics
+
+These metrics enable:
+
+* Continuous monitoring of logging maturity distribution
+* Trend analysis of EL progression over time
+* Detection of regression (e.g., sudden spike in EL0)
+* Executive-level compliance reporting
+* Evidence of increasing investigative readiness
+* Domain-level breakdowns when grouped by `omb.domain`
+
+---
+
+## Example Dashboard Visualizations
+
+The tier metrics support:
+
+* EL distribution pie chart
+* Time-series trend of EL maturity
+* EL2 + EL3 coverage ratio
+* EL0 alert thresholds
+* Domain vs Tier heatmaps
+
+Example executive view:
+
+```
+Identity: EL3 dominant
+Cloud: EL2 trending upward
+Network: EL2 stable
+Endpoint: EL3 high coverage
+```
+
+---
+
+## Compliance Reporting Value
+
+These metrics provide measurable evidence that:
+
+* Logging maturity is continuously monitored
+* Agencies can demonstrate quantitative progress
+* EL regression is detectable in near real time
+* Logging posture is operationalized, not static
+
+This transforms OMB M-21-31 compliance from documentation-based reporting to measurable operational control.
+
+---
+
 # Summary
 
 This framework transforms OMB M-21-31 from a compliance documentation exercise into an automated, continuously validated control within Datadog.
