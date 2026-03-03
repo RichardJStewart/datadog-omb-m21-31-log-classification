@@ -94,6 +94,10 @@ This provides:
 
 This ensures every log receives a minimum classification.
 
+The processing is depicted in this flowchart:
+
+![OMB Pipeline Diagram](OMB_M2131_Pipeline_Detailed.png)
+
 ---
 
 ## Stage 2 – Precision Attribute Discovery
