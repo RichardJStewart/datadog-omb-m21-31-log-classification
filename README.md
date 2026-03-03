@@ -66,6 +66,12 @@ The final result is an enriched JSON object:
 
 # 3. Datadog Pipeline Design
 
+The processing is depicted in this flowchart:
+
+![OMB Pipeline Diagram](OMB_M2131_Pipeline_Detailed.png)
+
+The description of each stage is as follows:
+
 Pipeline name: **OMB M2131**
 Filter: `source:*`
 Exported configuration: 
@@ -93,10 +99,6 @@ This provides:
 * Default `omb.m2131_el`
 
 This ensures every log receives a minimum classification.
-
-The processing is depicted in this flowchart:
-
-![OMB Pipeline Diagram](OMB_M2131_Pipeline_Detailed.png)
 
 ---
 
