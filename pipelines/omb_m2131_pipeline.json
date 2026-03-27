@@ -1,9 +1,5 @@
 {
-  "id": "OGSM7Pj4TTSfroeqVP3tRQ",
-  "type": "pipeline",
   "name": "OMB M2131",
-  "is_enabled": true,
-  "is_read_only": false,
   "filter": {
     "query": "source:*"
   },
