@@ -1,6 +1,6 @@
 curl -X POST "https://api.datadoghq.com/api/v2/logs/config/metrics" \
-  -H "DD-API-KEY: <YOUR_API_KEY>" \
-  -H "DD-APPLICATION-KEY: <YOUR_APP_KEY>" \
+  -H "DD-API-KEY: $DD_API_KEY" \
+  -H "DD-APPLICATION-KEY: $DD_APP_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "data": {
@@ -14,8 +14,8 @@ curl -X POST "https://api.datadoghq.com/api/v2/logs/config/metrics" \
   }'
 
 curl -X POST "https://api.datadoghq.com/api/v2/logs/config/metrics" \
-  -H "DD-API-KEY: <YOUR_API_KEY>" \
-  -H "DD-APPLICATION-KEY: <YOUR_APP_KEY>" \
+  -H "DD-API-KEY: $DD_API_KEY" \
+  -H "DD-APPLICATION-KEY: $DD_APP_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "data": {
@@ -29,8 +29,8 @@ curl -X POST "https://api.datadoghq.com/api/v2/logs/config/metrics" \
   }'
 
 curl -X POST "https://api.datadoghq.com/api/v2/logs/config/metrics" \
-  -H "DD-API-KEY: <YOUR_API_KEY>" \
-  -H "DD-APPLICATION-KEY: <YOUR_APP_KEY>" \
+  -H "DD-API-KEY: $DD_API_KEY" \
+  -H "DD-APPLICATION-KEY: $DD_APP_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "data": {
@@ -44,8 +44,8 @@ curl -X POST "https://api.datadoghq.com/api/v2/logs/config/metrics" \
   }'
 
 curl -X POST "https://api.datadoghq.com/api/v2/logs/config/metrics" \
-  -H "DD-API-KEY: <YOUR_API_KEY>" \
-  -H "DD-APPLICATION-KEY: <YOUR_APP_KEY>" \
+  -H "DD-API-KEY: $DD_API_KEY" \
+  -H "DD-APPLICATION-KEY: $DD_APP_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "data": {
